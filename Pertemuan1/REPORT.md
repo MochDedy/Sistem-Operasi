@@ -47,6 +47,7 @@ Install Ubuntu Server 22.04 LTS di VirtualBox dengan langkah berikut:
 1. Download Ubuntu Server
     ![Langkah 1](image/Langkah1.png "Langkah1")
 2. Login menggunakan user account dan password
+    
     ![Langkah 2](image/Langkah2.png "Langkah2")
 3. Tampilan Neofetch
     ![Langkah 3](image/Langkah3.png "Langkah3")
