@@ -119,7 +119,7 @@ Eksplorasi sistem yang baru diinstall:
 2. Langkah 2
    ![Langkah 2](image/Langkah2_1.5.png "Langkah2")
 3. Langkah 3
-   ![Langkah 3](image/Langkah3_1.5.png "Langkah3")
+   ![Langkah 3](image/langkah3_1.5.png "Langkah3")
 4. Langkah 4
    ![Langkah 4](image/Langkah4_1.5.png "Langkah4")
 5. Langkah 5 - Instalasi dan menjalankan htop
