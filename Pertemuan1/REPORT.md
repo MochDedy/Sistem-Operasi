@@ -13,15 +13,15 @@ Jelaskan 5 fungsi utama sistem operasi dengan contoh konkret dari minimal 2
 OS berbeda (Windows, macOS, atau Linux).
 #### Jawaban
 Fungsi:
-       * Sistem operasi mengatur proses yang berjalan agar CPU digunakan secara efisien.
-       * Membuat dan mengakhiri proses
-       * Mengatur komunikasi antar proses (IPC)
-       * Menangani multitasking
-       * Menentukan proses mana yang mendapatkan giliran CPU
+* Sistem operasi mengatur proses yang berjalan agar CPU digunakan secara efisien.
+* Membuat dan mengakhiri proses
+* Mengatur komunikasi antar proses (IPC)
+* Menangani multitasking
+* Menentukan proses mana yang mendapatkan giliran CPU
 
 Contoh:
-       * <h4>Windows<h4> -> Task Manager menampilkan daftar aplikasi dan penggunaan CPU.
-       * <h4>Linux<h4> -> Perintah "ps, top, dan htop" untuk melihat proses aktif
+* Windows -> Task Manager menampilkan daftar aplikasi dan penggunaan CPU.
+* Linux -> Perintah "ps, top, dan htop" untuk melihat proses aktif
 
 
 #### Latihan 1.2
