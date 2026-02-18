@@ -135,26 +135,26 @@ Eksplorasi sistem yang baru diinstall:
    ![Langkah 5](image/Langkah5_1.5.png "Langkah5")
    ![Langkah 5](image/runhtop.png "Langkah5")
 
-6. <h4>Laporan Konfigurasi Sistem Ubuntu Server
+6. <h4>Laporan Konfigurasi Sistem Ubuntu Server<h4>
    1. Informasi Sistem Operasi
-       * Nama OS: Ubuntu
-       * Versi: 24.04.4 LTS
-       * Codename: Noble Numbat
-       * Basis: Debian
+       - Nama OS: Ubuntu
+       - Versi: 24.04.4 LTS
+       - Codename: Noble Numbat
+       - Basis: Debian
    2. Versi Kernel
-       * Kernel: 6.8.0-100-generic
+       - Kernel: 6.8.0-100-generic
    3. Konfigurasi Disk dan Partisi
-       * Total Disk: 25 GB
+       - Total Disk: 25 GB
    4. Penggunaan Penyimpanan
-       * Root (/) memiliki kapasitas 12 GB
-       * Digunakan: 5.1 GB
-       * Sisa ruang: 5.6 GB
-       * Persentase penggunaan: 48%
+       - Root (/) memiliki kapasitas 12 GB
+       - Digunakan: 5.1 GB
+       - Sisa ruang: 5.6 GB
+       - Persentase penggunaan: 48%
    5. Konfigurasi Memori (RAM dan Swap)
-       * Total RAM: 1.9 GB
-       * Digunakan: 340 MB
-       * Tersedia: 1.6 GB
-       * Swap: 2.0 GB (belum digunakan)
+       - Total RAM: 1.9 GB
+       - Digunakan: 340 MB
+       - Tersedia: 1.6 GB
+       - Swap: 2.0 GB (belum digunakan)
 
 ### 1.10.3 Latihan Refleksi
 
