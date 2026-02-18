@@ -13,7 +13,7 @@ Jelaskan 5 fungsi utama sistem operasi dengan contoh konkret dari minimal 2
 OS berbeda (Windows, macOS, atau Linux).
 #### Jawaban
 Fungsi:
-* Sistem operasi mengatur proses yang berjalan agar CPU digunakan secara efisien.
+* Sistem operasi mengatur proses yang berjalan agar CPU digunakan secara efisien
 * Membuat dan mengakhiri proses
 * Mengatur komunikasi antar proses (IPC)
 * Menangani multitasking
@@ -28,6 +28,13 @@ Contoh:
 Kapan sebaiknya menggunakan Windows vs Linux vs macOS? Analisis
 berdasarkan use case: gaming, development, server, creative work, dan enterprise.
 #### Jawaban
+Fungsi:
+Berdasarkan fungsi
+* Windows -> Perkantoran dan Bisnis, Gaming, Aplikasi Umum & Kompatibilitas Tinggi.
+* Linux -> Server dan Cloud Computing, Development dan Programming, Sistem yang Membutuhkan Stabilitas Tinggi.
+* MacOS -> Creative Work (Desain, Editing, Audio, Video), Ekosistem Apple, development iOS
+
+### Latihan 1.10.2 Latihan Praktikal
 
 #### Latihan 1.3
 Install Ubuntu Server 22.04 LTS di VirtualBox dengan langkah berikut:
