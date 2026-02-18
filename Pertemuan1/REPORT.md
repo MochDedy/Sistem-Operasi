@@ -28,7 +28,6 @@ Contoh:
 Kapan sebaiknya menggunakan Windows vs Linux vs macOS? Analisis
 berdasarkan use case: gaming, development, server, creative work, dan enterprise.
 #### Jawaban
-Fungsi:
 Berdasarkan fungsi
 * Windows -> Perkantoran dan Bisnis, Gaming, Aplikasi Umum & Kompatibilitas Tinggi.
 * Linux -> Server dan Cloud Computing, Development dan Programming, Sistem yang Membutuhkan Stabilitas Tinggi.
