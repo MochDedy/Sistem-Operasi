@@ -63,14 +63,19 @@ Setelah instalasi Ubuntu Server, lakukan tasks berikut:
 7. Dokumentasikan output dari setiap command
 #### Jawaban
 1. Langkah 1
+    
     ![Langkah 1](image/Langkah1_1.4.png "Langkah1")
 2. Langkah 2
     ![Langkah 2](image/Langkah2_1.4.png "Langkah2")
 3. Langkah 3
+    
     ![Langkah 3](image/Langkah3_1.4.png "Langkah3")
 4. Langkah 4
+    
     ![Langkah 4](image/Langkah4_1.4.png "Langkah4")
 5. Langkah 5
+    
     ![Langkah 5](image/Langkah5_1.4.png "Langkah5")
 6. Langkah 6
+    
     ![Langkah 6](image/Langkah6_1.4.png "Langkah6")
