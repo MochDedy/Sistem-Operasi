@@ -9,6 +9,7 @@
 1. Tampilkan informasi CPU: lscpu
    ![CPU](image/tampilanCPU.png "CPU")
 2. Tampilkan ringkasan memori: free -h
+
    ![Memori](image/ringkasanmemori.png "Memori")
 3. (Opsional) cek informasi hardware dari DMI/BIOS (butuh sudo): sudo dmidecode -t system
    ![DMI_BIOS](image/DMI_BIOS.png "DMI_BIOS")
@@ -35,3 +36,27 @@
 
 4. Perbedaan RAM vs swap:
    - RAM merupakan memori utama yang berfungsi untuk menjalankan program secara langsung. Akses ke RAM sangat cepat karena terhubung langsung dengan CPU. Swap adalah area di dalam disk yang dimanfaatkan sebagai memori tambahan saat RAM sudah penuh. Karena berada di dalam disk (HDD/SSD), swap jauh lebih lambat dibandingkan dengan RAM. Jika sistem terlalu sering mengandalkan swap, kinerja akan menurun.
+
+## Praktikum 2.2 - Identifikasi Perangkat PCI/USB dan Driver
+
+1. Lihat daftar perangkat PCI: lspci
+    ![PCI](image/PCI.png "PCI")
+2. Lihat perangkat PCI beserta driver kernel yang digunakan: lspci - nnk
+    ![PCI_Kernel](image/PCI_Kernel.png "PCI_Kernel")
+3. Fokus pada NIC (Ethernet) untuk mencari modul driver: lspci - nnk | grep - A3 -i ethernet
+    ![NIC](image/NIC.png "NIC")
+4. Lihat perangkat USB: lsusb
+    ![USB](image/USB.png "USB")
+5. Lihat topologi USB (tree): lsusb -t
+    ![topologiUSB](image/topologiUSB.png "topologiUSB")
+
+#### Latihan 2.2
+
+1. Temukan 1 perangkat PCI (misal NIC) dan tuliskan: Vendor:Device ID (angka
+heksadesimal), nama driver/modul kernel, dan deskripsi singkat fungsinya.
+
+#### Jawaban
+
+    Controller Intel 82540EM Gigabit Ethernet dengan Vendor ID 8086:100e adalah perangkat PCI yang dipilih. Driver kernel yang digunakan adalah e1000. Ini adalah kartu jaringan (NIC) yang memungkinkan sistem terhubung ke jaringan Ethernet dan berkomunikasi data melalui LAN atau internet.
+
+## Praktikum 2.3 - Identifikasi Storage dan Filesystem
