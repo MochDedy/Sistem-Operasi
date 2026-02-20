@@ -47,8 +47,10 @@
 3. Fokus pada NIC (Ethernet) untuk mencari modul driver: lspci - nnk | grep - A3 -i ethernet
    ![NIC](image/NIC.png "NIC")
 4. Lihat perangkat USB: lsusb
+   
    ![USB](image/USB.png "USB")
 5. Lihat topologi USB (tree): lsusb -t
+   
    ![topologiUSB](image/topologiUSB.png "topologiUSB")
 
 #### Latihan 2.2
@@ -400,13 +402,41 @@ Layanan SSH, juga dikenal sebagai Secure Shell, menggunakan port 22 untuk memung
 ## Latihan 1.9
 
 ### Latihan 2.A
-1. Jalankan lspci -nnk. Pilih 1 perangkat PCI dan tuliskan: nama perangkat, ID vendor:device, dan kernel driver in use.
+Jalankan lspci -nnk. Pilih 1 perangkat PCI dan tuliskan: nama perangkat, ID vendor:device, dan kernel driver in use.
 
 ### Jawaban 2.A
 
 ### Latihan 2.B
-1. Tentukan device root filesystem dengan findmnt /. Lalu cocokkan dengan lsblk -f dan tuliskan tipe filesystem serta UUID-nya.
+Tentukan device root filesystem dengan findmnt /. Lalu cocokkan dengan lsblk -f dan tuliskan tipe filesystem serta UUID-nya.
 
 ### Jawaban 2.B
 
 ### Latihan 2.C
+Buat file server.log berisi minimal 10 baris dengan variasi kata: INFO,
+WARN, ERROR. Gunakan grep untuk menampilkan hanya baris ERROR.
+
+### Jawaban 2.C
+
+### Latihan 2.D
+Gunakan sed untuk mengganti semua kata server menjadi node pada file
+latihan. Tunjukkan sebelum dan sesudah.
+
+### Jawaban 2.D
+
+### Latihan 2.E
+Gunakan df -h lalu awk untuk menampilkan filesystem yang penggunaan disk
+di atas 70%.
+
+### Jawaban 2.E
+
+### Latihan 2.F
+Jalankan sleep 600 &. Temukan PID-nya dengan ps. Hentikan dengan
+SIGTERM. Jelaskan beda SIGTERM vs SIGKILL
+
+### Jawaban 2.F
+
+### Latihan 2.G
+Gunakan systemctl –failed. Jika tidak ada yang gagal, pilih satu service
+aktif (misal ssh) dan tampilkan status serta 30 baris log terakhirnya.
+
+### Jawaban 2.G
