@@ -11,6 +11,7 @@
 2. Tampilkan ringkasan memori: free -h
 
    ![Memori](image/ringkasanmemori.png "Memori")
+
 3. (Opsional) cek informasi hardware dari DMI/BIOS (butuh sudo): sudo dmidecode -t system
    ![DMI_BIOS](image/DMI_BIOS.png "DMI_BIOS")
 
@@ -40,23 +41,73 @@
 ## Praktikum 2.2 - Identifikasi Perangkat PCI/USB dan Driver
 
 1. Lihat daftar perangkat PCI: lspci
-    ![PCI](image/PCI.png "PCI")
+   ![PCI](image/PCI.png "PCI")
 2. Lihat perangkat PCI beserta driver kernel yang digunakan: lspci - nnk
-    ![PCI_Kernel](image/PCI_Kernel.png "PCI_Kernel")
+   ![PCI_Kernel](image/PCI_Kernel.png "PCI_Kernel")
 3. Fokus pada NIC (Ethernet) untuk mencari modul driver: lspci - nnk | grep - A3 -i ethernet
-    ![NIC](image/NIC.png "NIC")
+   ![NIC](image/NIC.png "NIC")
 4. Lihat perangkat USB: lsusb
-    ![USB](image/USB.png "USB")
+   ![USB](image/USB.png "USB")
 5. Lihat topologi USB (tree): lsusb -t
-    ![topologiUSB](image/topologiUSB.png "topologiUSB")
+   ![topologiUSB](image/topologiUSB.png "topologiUSB")
 
 #### Latihan 2.2
 
 1. Temukan 1 perangkat PCI (misal NIC) dan tuliskan: Vendor:Device ID (angka
-heksadesimal), nama driver/modul kernel, dan deskripsi singkat fungsinya.
+   heksadesimal), nama driver/modul kernel, dan deskripsi singkat fungsinya.
 
 #### Jawaban
 
-    Controller Intel 82540EM Gigabit Ethernet dengan Vendor ID 8086:100e adalah perangkat PCI yang dipilih. Driver kernel yang digunakan adalah e1000. Ini adalah kartu jaringan (NIC) yang memungkinkan sistem terhubung ke jaringan Ethernet dan berkomunikasi data melalui LAN atau internet.
+- Controller Intel 82540EM Gigabit Ethernet dengan Vendor ID 8086:100e adalah perangkat PCI yang dipilih. Driver kernel yang digunakan adalah e1000. Ini adalah kartu jaringan (NIC) yang memungkinkan sistem terhubung ke jaringan Ethernet dan berkomunikasi data melalui LAN atau internet.
 
 ## Praktikum 2.3 - Identifikasi Storage dan Filesystem
+
+1. Lihat daftar disk/partisi: lsblk -f
+
+   ![disk](image/daftarDisk.png "disk")
+
+2. Tampilkan UUID dan tipe filesystem: sudo blkid
+
+   ![UUID](image/UUID.png "UUID")
+
+3. Lihat mount point untuk root filesystem: findmnt /
+
+   ![filesystem](image/filesystem.png "filesystem")
+
+## Praktikum 2.4 - Melihat Modul Aktif dan Informasinya
+
+1. Cek versi kernel: uname -r
+
+   ![kernel](image/Kernel.png "kernel")
+
+2. Tampilkan daftar modul aktif: lsmod | head
+
+   ![modulAktif](image/modulAktif.png)
+
+3. Pilih salah satu modul (contoh aman: loop) dan lihat detailnya: modinfo loop
+
+   ![pilihModul](image/pilihModul.png)
+
+4. Muat modul (jika belum aktif), lalu verifikasi: sudo modprobe loop, lsmod | grep -i loop
+
+   ![blmAktif](image/blmAktif.png)
+
+5. (Opsional) lihat pesan kernel terbaru: dmesg -T | tail -n 20
+
+   ![pesanKernel](image/pesanKernel.png)
+
+## Praktikum 2.5 - Konfigurasi Auto-load dan Blacklist
+
+1. Buat file auto-load: echo " loop " | sudo tee / etc / modules - load . d / loop . conf
+
+   ![fileAuto](image/fileAutoLoad.png)
+
+2. Simulasikan verifikasi (tanpa reboot) dengan memastikan modul sudah aktif: lsmod | grep -i loop
+
+   ![veriftanpareboot](image/verifTanpaReboot.png)
+
+3. (Opsional, konsep) blacklist modul: # echo "blacklist loop" | sudo tee /etc/modprobe.d/ blacklist - loop . conf
+
+   ![blacklistmodul](image/blacklistModul.png)
+
+## Praktikum 2.6 - Mengenali Block vs Character Device
