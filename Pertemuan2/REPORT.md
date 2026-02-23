@@ -406,37 +406,49 @@ Jalankan lspci -nnk. Pilih 1 perangkat PCI dan tuliskan: nama perangkat, ID vend
 
 ### Jawaban 2.A
 
+- Nama perangkat : Ethernet Controller [0200] (Intel 82540EM) ID vendor:device : 8086:100e Kernel driver in use : e1000
+   ![Tugas2A](image/tugas2A.png)
+
 ### Latihan 2.B
 Tentukan device root filesystem dengan findmnt /. Lalu cocokkan dengan lsblk -f dan tuliskan tipe filesystem serta UUID-nya.
 
 ### Jawaban 2.B
+   ![Tugas2B](image/tugas2B.png)
+- Device root filesystem berada pada sda3 dengan nama "ubuntu--vg-ubuntu--lv". Tipe filesystemnya adalah ext4 dan UUIDnya adalah "27014fb4-bf7b4137-830d-c763120c175d"
 
 ### Latihan 2.C
 Buat file server.log berisi minimal 10 baris dengan variasi kata: INFO,
 WARN, ERROR. Gunakan grep untuk menampilkan hanya baris ERROR.
 
 ### Jawaban 2.C
+   ![Tugas2C](image/tugas2C.png)
 
 ### Latihan 2.D
 Gunakan sed untuk mengganti semua kata server menjadi node pada file
 latihan. Tunjukkan sebelum dan sesudah.
 
 ### Jawaban 2.D
+   ![Tugas2D](image/tugas2D.png)
 
 ### Latihan 2.E
 Gunakan df -h lalu awk untuk menampilkan filesystem yang penggunaan disk
 di atas 70%.
 
 ### Jawaban 2.E
+   ![Tugas2E](image/tugas2E.png)
 
 ### Latihan 2.F
 Jalankan sleep 600 &. Temukan PID-nya dengan ps. Hentikan dengan
 SIGTERM. Jelaskan beda SIGTERM vs SIGKILL
 
 ### Jawaban 2.F
+   ![Tugas2F](image/tugas2F.png)
+- SIGTERM -> Menghentikan proses secara normal (graceful).
+- SIGKILL -> Memaksa proses berhenti langsung tanpa proses pembersihan.
 
 ### Latihan 2.G
 Gunakan systemctl –failed. Jika tidak ada yang gagal, pilih satu service
 aktif (misal ssh) dan tampilkan status serta 30 baris log terakhirnya.
 
 ### Jawaban 2.G
+   ![Tugas2G](image/tugas2G.png)
