@@ -1,4 +1,4 @@
-# Laporan Praktikum Sistem Operasi Jobsheet 2
+# Laporan Praktikum Sistem Operasi Jobsheet 4
 
 <h4>Nama : Moch Dedy Triagwi<h4>
 <h4>NIM  : 254107020233<h4>
