@@ -126,6 +126,7 @@ Bash:
 2. Informasi Detail CPU
    ![Langkah2](image/checkcpu.png)
 3. Informasi Detail RAM
+   
    ![Langkah3](image/checkram.png)
    ![Langkah4](image/checkram2.png)
 4. Informasi Detail Storage
@@ -153,6 +154,7 @@ Tampilan awal masih menggunakan konfigurasi bawaan Ubuntu dengan tema, wallpaper
 #### Melakukan Kustomisasi Wallpaper
 
 1. Buka terminal dan buat folder untuk wallpaper
+   
    ![1](image/folderwallpaper.png)
 2. Copy wallpaper yang sudah didownload
    ![2](image/copywallpaper.png)
@@ -162,6 +164,7 @@ Tampilan awal masih menggunakan konfigurasi bawaan Ubuntu dengan tema, wallpaper
 4. Copy wallpaper ke folder Cubic
    ![4](image/copywallpaperkefolder.png)
 5. Lakukan Set Wallpaper
+   
    ![5](image/setwallpaper.png)
 
 #### Melakukan Kustomisasi Tema Sistem dan Paket Ikon
