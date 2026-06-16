@@ -54,6 +54,7 @@ Perangkat dan aplikasi yang digunakan dalam proses remastering adalah sebagai be
 VLC Media Player ditambahkan sebagai aplikasi pemutar multimedia karena mampu menjalankan berbagai format audio dan video tanpa memerlukan codec tambahan.
 
 1. Install
+
    ![Langka1](image/installvlc1.png)
    ![langkah2](image/installvlc.png)
 2. Cek hasil download VLC
@@ -96,6 +97,7 @@ Apache2 dan PHP berhasil berjalan pada sistem sehingga dapat digunakan untuk men
 Visual Studio Code diinstal sebagai editor kode yang mendukung berbagai bahasa pemrograman dan memiliki banyak fitur untuk membantu proses pengembangan perangkat lunak.
 
 1. Install
+   
    ![Langkah1](image/installvscd1.png)
    ![Langkah2](image/installvscd2.png)
    ![Langkah3](image/installvscd3.png)
@@ -104,8 +106,10 @@ Visual Studio Code diinstal sebagai editor kode yang mendukung berbagai bahasa p
    ![Langkah6](image/installvscd6.png)
 
 2. Berhubung Visual Studio Code saya error jadi untuk mengatasi error tersebut perlu akses mengedit file desktop dari VSCODE
+   
    ![Langkah1](image/fixvscode.png)
 3. Buka akses root menggunakan nano
+   
    ![langkah2](image/image.png)
 4. Setting pada line ke-5 yaitu EXEC tambahkan "--no-sandbox --disable-gpu"
    ![Langkah3](image/nanoVSCD.png)
@@ -127,12 +131,14 @@ Bash:
 4. Informasi Detail Storage
    ![Langkah5](image/checkstorage.png)
 5. Tambahkan izin eksekusi langsung
+   
    ![Langkah6](image/izinEksekusi.png)
 
 Pada tahap ini dibuat aplikasi sederhana menggunakan Bash Script. Script berfungsi untuk menampilkan informasi tertentu atau menjalankan perintah otomatis sesuai kebutuhan pengguna.
 Pembuatan Bash Script bertujuan untuk menunjukkan bahwa sistem operasi hasil remastering dapat ditambahkan aplikasi buatan sendiri selain aplikasi yang berasal dari repositori
 
 Hasil:
+
 ![Langkah7](image/hasilKustom.png)
 Saat dijalankan, Bash Script berhasil menampilkan output sesuai dengan yang telah diprogram sebelumnya. Hal ini menunjukkan bahwa script telah bekerja dengan baik tanpa error.
 
@@ -151,6 +157,7 @@ Tampilan awal masih menggunakan konfigurasi bawaan Ubuntu dengan tema, wallpaper
 2. Copy wallpaper yang sudah didownload
    ![2](image/copywallpaper.png)
 3. Buat folder Dconf
+   
    ![3](image/folderdconf.png)
 4. Copy wallpaper ke folder Cubic
    ![4](image/copywallpaperkefolder.png)
@@ -163,6 +170,7 @@ Tampilan awal masih menggunakan konfigurasi bawaan Ubuntu dengan tema, wallpaper
    ![1](image/installtemadanIcon.png)
    ![2](image/installtemadanIcon2.png)
 2. Cek Wallpaper, Tema dan Ikon
+   
    ![3](image/checkwallpaper_tema.png)
 
 ### Sesudah Perubahan
